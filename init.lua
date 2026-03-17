@@ -4,6 +4,7 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = true
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
+vim.opt.clipboard = "unnamedplus"
 vim.g.have_nerd_font = true
 
 vim.opt.listchars = "eol:$,tab:>-,trail:~,extends:>,precedes:<"
@@ -25,9 +26,10 @@ vim.cmd([[colorscheme tokyonight]])
 
 require("config.mason")
 require("config.web-devicons")
+require("config.mini-icons")
 require("config.telescope")
 require("config.conform")
 require("config.neotree")
 require("config.lsp")
+require("config.which-key")
 require("config.copilot")
-require("config.copilot-chat")
